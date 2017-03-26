@@ -1,12 +1,12 @@
 <?php
 
-namespace Shooka\ModelEvents\Tests;
+namespace App\Providers;
 
 use Shooka\ModelEvents\ServiceProvider;
 
 class ModelEventServiceProvider extends ServiceProvider
 {
     protected $listeners = [
-        Person::class => PersonEvent::class,
+        // 'App\User' => 'App\ModelEvents\UserEvent',
     ];
 }

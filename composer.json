@@ -1,12 +1,15 @@
 {
   "name": "shooka/laravel-modelevents",
-  "description": "Let a service provider handle your model event listeners",
+  "description": "Let a service provider handle your model events",
   "keywords": [
-	"models",
+	"laravel",
+	"model",
 	"events",
-	"external",
+	"event",
+	"eloquent",
 	"listeners",
-	"laravel"
+	"observe",
+	"listen"
   ],
   "homepage": "https://github.com/shooka/laravel-modelevents",
   "license": "MIT",
@@ -18,12 +21,12 @@
   ],
   "require": {
 	"php": ">=5.5.0",
-	"laravel/framework": "5.1.*|5.2.*"
+	"laravel/framework": "5.2.*|5.3.*|5.4.*"
   },
   "require-dev": {
-	"phpunit/phpunit": "^4.8",
-	"orchestra/testbench": "^3.1",
-	"satooshi/php-coveralls": "dev-master"
+	"phpunit/phpunit": "^5.5",
+	"orchestra/testbench": "^3.3",
+	"satooshi/php-coveralls": "~1.0"
   },
   "autoload": {
 	"psr-4": {

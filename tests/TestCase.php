@@ -4,16 +4,11 @@ namespace Shooka\ModelEvents\Tests;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {
-    use \Illuminate\Foundation\Testing\DatabaseTransactions;
-
     public function setUp()
     {
         parent::setUp();
 
-        $this->artisan('migrate', [
-            '--database' => 'testbench',
-            '--realpath' => realpath(__DIR__ . '/support/migrations'),
-        ]);
+        $this->loadMigrationsFrom(realpath(__DIR__ . '/support/migrations'));
     }
 
     protected function getEnvironmentSetUp($app)
